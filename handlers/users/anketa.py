@@ -8,7 +8,6 @@ import re
 
 from keyboards.default import work_experience
 from loader import dp
-from loader import bot
 from googleapiclient.discovery import build
 from keyboards.default.hours_per_week import hours_per_week
 from keyboards.default.can_continue_work import can_continue_work
