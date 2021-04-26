@@ -502,7 +502,7 @@ async def process_confirm(message: types.Message, state: FSMContext):
     async with state.proxy() as data:
         data['confirm'] = message.text
 
-    if data['confirm'] == "да".lower():
+    if message.text.lower() == "Да".lower():
         result = []
         values = []
         for el in data.values():
