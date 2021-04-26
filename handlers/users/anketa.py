@@ -13,7 +13,6 @@ from keyboards.default.can_continue_work import can_continue_work
 from keyboards.default.education import education
 from keyboards.default.find_out_about_naumen import find_out_about_naumen
 from keyboards.default.choose_directions import choose_directions
-from google.oauth2 import service_account
 
 # SERVICE_ACCOUNT_FILE = '/home/dmitrii/TemplateTelegramBot/handlers/users/key.json'
 # SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
