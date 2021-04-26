@@ -25,7 +25,7 @@ async def show_main_keyboard(call: CallbackQuery):
     await call.answer(cache_time=60)
 
     for message_id in range((call.message.message_id - 4), call.message.message_id):
-        await bot.delete_message(call.message.chat.id, message_id)
+        await call.bot.delete_message(call.message.chat.id, message_id)
     await call.message.delete()
 
 
