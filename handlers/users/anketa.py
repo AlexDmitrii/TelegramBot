@@ -24,8 +24,7 @@ from keyboards.default.choose_directions import choose_directions
 # SAMPLE_SPREADSHEET_ID = '1mHujKDGeNAh4o6LmEUgyh0P3ZTP0l6qrdVSX5fVBSHU'
 #
 # service = build('sheets', 'v4', credentials=creds)
-#
-# # Call the Sheets API
+
 # sheet = service.spreadsheets()
 
 
