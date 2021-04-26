@@ -32,8 +32,8 @@ async def hello(message: types.Message):
                          "👉 могут найти общий язык с командой, не стесняются задавать уточняющие вопросы и просить помощи у коллег\n"
                          "👉 хотят развиваться в области ИТ\n")
 
-    await message.answer("Этапы прохождения на стажировку!")
-    photo = open("../../documents/steps.png", 'rb')
-    await bot.send_photo(message.chat.id, photo)
+    # await message.answer("Этапы прохождения на стажировку!")
+    # photo = open("../../documents/steps.png", 'rb')
+    # await bot.send_photo(message.chat.id, photo)
 
     await message.answer("Меню.", reply_markup=menu)

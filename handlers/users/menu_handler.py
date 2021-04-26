@@ -135,11 +135,11 @@ async def show_development(call: CallbackQuery):
                               "Формат стажировки будет зависеть от эпидемиологической ситуации. По мере снятия ограничений планируется полноценный выход стажеров в офис.",
                               parse_mode='Markdown')
 
-    await call.message.answer("\n"
-                              "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
-                              "Файл с техническим заданием:\n")
-    tz = open("../../documents/TZ_development.pdf", 'rb')
-    await bot.send_document(call.message.chat.id, tz)
+    # await call.message.answer("\n"
+    #                           "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
+    #                           "Файл с техническим заданием:\n")
+    # tz = open("../../documents/TZ_development.pdf", 'rb')
+    # await bot.send_document(call.message.chat.id, tz)
 
     await call.message.answer("Заполнить анкету:", reply_markup=enter_anketa)
 
@@ -217,12 +217,12 @@ async def show_development_krasnodar(call: CallbackQuery):
                               "\n",
                               parse_mode='Markdown')
 
-    await call.message.answer("\n"
-                              "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
-                              "Файл с техническим заданием:\n")
+    # await call.message.answer("\n"
+    #                           "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
+    #                           "Файл с техническим заданием:\n")
 
-    tz = open("../../documents/TZ_development.pdf", 'rb')
-    await bot.send_document(call.message.chat.id, tz)
+    # tz = open("../../documents/TZ_development.pdf", 'rb')
+    # await bot.send_document(call.message.chat.id, tz)
 
     await call.message.answer("Заполнить анкету:", reply_markup=enter_anketa)
 
@@ -304,12 +304,12 @@ async def show_testing(call: CallbackQuery):
                               "По мере снятия ограничений планируется полноценный выход стажеров в офис.",
                               parse_mode='Markdown')
 
-    await call.message.answer("\n"
-                              "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
-                              "Файл с техническим заданием:\n")
+    # await call.message.answer("\n"
+    #                           "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
+    #                           "Файл с техническим заданием:\n")
 
-    tz = open("../../documents/TZ_testing.pdf", 'rb')
-    await bot.send_document(call.message.chat.id, tz)
+    # tz = open("../../documents/TZ_testing.pdf", 'rb')
+    # await bot.send_document(call.message.chat.id, tz)
 
     await call.message.answer("Заполнить анкету:", reply_markup=enter_anketa)
 
@@ -408,12 +408,12 @@ async def show_analytics(call: CallbackQuery):
                               "✅Стипендия 35 000 рублей в месяц на руки.\n",
                               parse_mode='Markdown')
 
-    await call.message.answer("\n"
-                              "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
-                              "Файл с техническим заданием:\n")
+    # await call.message.answer("\n"
+    #                           "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
+    #                           "Файл с техническим заданием:\n")
 
-    tz = open("../../documents/TZ_analytics.pdf", 'rb')
-    await bot.send_document(call.message.chat.id, tz)
+    #tz = open("../../documents/TZ_analytics.pdf", 'rb')
+    #await bot.send_document(call.message.chat.id, tz)
 
     await call.message.answer("Заполнить анкету:", reply_markup=enter_anketa)
 
@@ -485,12 +485,12 @@ async def show_documentation(call: CallbackQuery):
                               "По мере снятия ограничений планируется полноценный выход стажеров в офис.",
                               parse_mode='Markdown')
 
-    await call.message.answer("\n"
-                              "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
-                              "Файл с техническим заданием:\n")
+    # await call.message.answer("\n"
+    #                           "Для того, чтобы попасть в команду стажеров тебе нужно будет выполнить тестовое задание.\n"
+    #                           "Файл с техническим заданием:\n")
 
-    tz = open("../../documents/TZ_documentation.pdf", 'rb')
-    await bot.send_document(call.message.chat.id, tz)
+    # tz = open("../../documents/TZ_documentation.pdf", 'rb')
+    # await bot.send_document(call.message.chat.id, tz)
 
     await call.message.answer("Заполнить анкету:", reply_markup=enter_anketa)
 
