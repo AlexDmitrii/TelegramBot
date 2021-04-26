@@ -1,4 +1,3 @@
-from utils.misc import logging
 
 from aiogram import Dispatcher
 
