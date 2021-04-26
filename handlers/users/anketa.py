@@ -8,7 +8,7 @@ import re
 
 from keyboards.default import work_experience
 from loader import dp
-from googleapiclient.discovery import build
+# from googleapiclient.discovery import build
 from keyboards.default.hours_per_week import hours_per_week
 from keyboards.default.can_continue_work import can_continue_work
 from keyboards.default.education import education
@@ -16,19 +16,19 @@ from keyboards.default.find_out_about_naumen import find_out_about_naumen
 from keyboards.default.choose_directions import choose_directions
 from google.oauth2 import service_account
 
-SERVICE_ACCOUNT_FILE = '/home/dmitrii/TemplateTelegramBot/handlers/users/key.json'
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-
-creds = None
-creds = service_account.Credentials.from_service_account_file(
-    SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-
-SAMPLE_SPREADSHEET_ID = '1mHujKDGeNAh4o6LmEUgyh0P3ZTP0l6qrdVSX5fVBSHU'
-
-service = build('sheets', 'v4', credentials=creds)
-
-# Call the Sheets API
-sheet = service.spreadsheets()
+# SERVICE_ACCOUNT_FILE = '/home/dmitrii/TemplateTelegramBot/handlers/users/key.json'
+# SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+#
+# creds = None
+# creds = service_account.Credentials.from_service_account_file(
+#     SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+#
+# SAMPLE_SPREADSHEET_ID = '1mHujKDGeNAh4o6LmEUgyh0P3ZTP0l6qrdVSX5fVBSHU'
+#
+# service = build('sheets', 'v4', credentials=creds)
+#
+# # Call the Sheets API
+# sheet = service.spreadsheets()
 
 
 class Anketa(StatesGroup):
@@ -512,11 +512,11 @@ async def process_confirm(message: types.Message, state: FSMContext):
             values.append(el)
 
         result.append(values)
-
-        sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-                              range="Sheet2!A2", valueInputOption="RAW",
-                              body={"values": result}).execute()
-        await state.finish()
+        #
+        # sheet.values().append(spreadsheetId=SAMPLE_SPREADSHEET_ID,
+        #                       range="Sheet2!A2", valueInputOption="RAW",
+        #                       body={"values": result}).execute()
+        # await state.finish()
         await message.answer("Анкета отправлена. :) ", parse_mode='Markdown')
     else:
         await state.finish()
