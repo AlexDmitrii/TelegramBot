@@ -33,7 +33,7 @@ async def hello(message: types.Message):
                          "👉 хотят развиваться в области ИТ\n")
 
     await message.answer("Этапы прохождения на стажировку!")
-    photo = open("/home/dmitrii/TemplateTelegramBot/documents/steps.png", 'rb')
+    photo = open("../../documents/steps.png", 'rb')
     await bot.send_photo(message.chat.id, photo)
 
     await message.answer("Меню.", reply_markup=menu)
