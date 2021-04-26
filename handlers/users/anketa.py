@@ -74,7 +74,7 @@ class Anketa(StatesGroup):
 @dp.message_handler(state="*", commands=['cancel'])
 @dp.message_handler(Text(equals='cancel', ignore_case=True), state="*")
 async def cancel_handler(message: types.Message, state: FSMContext):
-    current_state = state.get_state()
+    current_state = await state.get_state()
     if current_state is None:
         return
 
@@ -506,7 +506,7 @@ async def process_confirm(message: types.Message, state: FSMContext):
     async with state.proxy() as data:
         data['confirm'] = message.text
 
-    if data['confirm'] == "Да":
+    if data['confirm'] == "да".lower():
         result = []
         values = []
         for el in data.values():
