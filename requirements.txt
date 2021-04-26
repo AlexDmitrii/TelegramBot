@@ -3,3 +3,5 @@ environs==8.0.0
 asyncpg
 python-dotenv
 PyMySQL==1.0.2
+google~=3.0.0
+logging~=0.4.9.6
